@@ -1,4 +1,6 @@
 class ProyectosController < ApplicationController
+  before_filter :authenticate_user!
+    load_and_authorize_resource except: [:create]
   before_action :set_proyecto, only: [:show, :edit, :update, :destroy]
 
   # GET /proyectos

@@ -1,4 +1,5 @@
 class ComentariosController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_comentario, only: [:show, :edit, :update, :destroy]
 
   # GET /comentarios

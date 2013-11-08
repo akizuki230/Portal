@@ -1,4 +1,5 @@
 class RespuestasController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_respuesta, only: [:show, :edit, :update, :destroy]
 
   # GET /respuestas

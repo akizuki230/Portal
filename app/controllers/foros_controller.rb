@@ -1,4 +1,5 @@
 class ForosController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_foro, only: [:show, :edit, :update, :destroy]
 
   # GET /foros
