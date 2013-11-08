@@ -11,7 +11,106 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131108014008) do
+ActiveRecord::Schema.define(version: 20131108022242) do
+
+  create_table "actas", force: true do |t|
+    t.date     "fecha"
+    t.string   "lugar"
+    t.string   "tipo_reunion"
+    t.text     "orden_dia"
+    t.text     "desarrollo"
+    t.text     "concluciones"
+    t.text     "tareas"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "actas", ["user_id"], name: "index_actas_on_user_id", using: :btree
+
+  create_table "articulos", force: true do |t|
+    t.string   "titulo"
+    t.string   "contenido"
+    t.string   "imagen"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "articulos", ["user_id"], name: "index_articulos_on_user_id", using: :btree
+
+  create_table "comentarios", force: true do |t|
+    t.text     "comentario"
+    t.integer  "user_id"
+    t.integer  "articulo_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comentarios", ["articulo_id"], name: "index_comentarios_on_articulo_id", using: :btree
+  add_index "comentarios", ["user_id"], name: "index_comentarios_on_user_id", using: :btree
+
+  create_table "eventos", force: true do |t|
+    t.string   "lugar"
+    t.date     "fecha"
+    t.text     "contenido"
+    t.string   "imagen"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "foros", force: true do |t|
+    t.text     "tema"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "foros", ["user_id"], name: "index_foros_on_user_id", using: :btree
+
+  create_table "integrantes", force: true do |t|
+    t.string   "nombre"
+    t.string   "apellido_1"
+    t.string   "apellido_2"
+    t.text     "perfil"
+    t.integer  "telefono"
+    t.string   "imagen"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "integrantes", ["user_id"], name: "index_integrantes_on_user_id", using: :btree
+
+  create_table "proyectos", force: true do |t|
+    t.string   "titulo"
+    t.text     "contenido"
+    t.string   "imagen"
+    t.string   "etapa"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "proyectos_users", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "proyecto_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "proyectos_users", ["proyecto_id"], name: "index_proyectos_users_on_proyecto_id", using: :btree
+  add_index "proyectos_users", ["user_id"], name: "index_proyectos_users_on_user_id", using: :btree
+
+  create_table "respuestas", force: true do |t|
+    t.text     "respuesta"
+    t.integer  "user_id"
+    t.integer  "articulo_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "respuestas", ["articulo_id"], name: "index_respuestas_on_articulo_id", using: :btree
+  add_index "respuestas", ["user_id"], name: "index_respuestas_on_user_id", using: :btree
 
   create_table "roles", force: true do |t|
     t.string   "name"

@@ -1,0 +1,41 @@
+<h1>Listing actas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Lugar</th>
+      <th>Tipo reunion</th>
+      <th>Orden dia</th>
+      <th>Desarrollo</th>
+      <th>Concluciones</th>
+      <th>Tareas</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actas.each do |acta| %>
+      <tr>
+        <td><%= acta.fecha %></td>
+        <td><%= acta.lugar %></td>
+        <td><%= acta.tipo_reunion %></td>
+        <td><%= acta.orden_dia %></td>
+        <td><%= acta.desarrollo %></td>
+        <td><%= acta.concluciones %></td>
+        <td><%= acta.tareas %></td>
+        <td><%= acta.user_id %></td>
+        <td><%= link_to 'Show', acta %></td>
+        <td><%= link_to 'Edit', edit_acta_path(acta) %></td>
+        <td><%= link_to 'Destroy', acta, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Acta', new_acta_path %>

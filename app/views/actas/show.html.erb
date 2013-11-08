@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @acta.fecha %>
+</p>
+
+<p>
+  <strong>Lugar:</strong>
+  <%= @acta.lugar %>
+</p>
+
+<p>
+  <strong>Tipo reunion:</strong>
+  <%= @acta.tipo_reunion %>
+</p>
+
+<p>
+  <strong>Orden dia:</strong>
+  <%= @acta.orden_dia %>
+</p>
+
+<p>
+  <strong>Desarrollo:</strong>
+  <%= @acta.desarrollo %>
+</p>
+
+<p>
+  <strong>Concluciones:</strong>
+  <%= @acta.concluciones %>
+</p>
+
+<p>
+  <strong>Tareas:</strong>
+  <%= @acta.tareas %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @acta.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_acta_path(@acta) %> |
+<%= link_to 'Back', actas_path %>
