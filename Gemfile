@@ -35,6 +35,6 @@ group :test do
   gem 'email_spec'
 end
 
-group :production do
+group :produc
   gem 'pg'
   end
