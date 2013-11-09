@@ -15,6 +15,9 @@ gem 'rolify'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'zurb-foundation'
+gem 'carrierwave'
+gem 'ckeditor_rails', :require => 'ckeditor-rails'
+gem 'rmagick', '2.13.2', :git=>'http://github.com/rmagick/rmagick.git'
 group :development do
   gem 'guard-bundler'
   gem 'guard-rails'

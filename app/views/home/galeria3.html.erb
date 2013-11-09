@@ -1,0 +1,63 @@
+<div id="main">
+    <%= image_tag "imagen.png", :alt => "logo", :id => "logo"%>
+
+<!-- Nav and Banner -->
+
+<div id="centeredmenu">
+<ul class="sf-menu">
+<li><%=link_to "Inicio", root_path, id: "home", class: "home"%></li>
+
+<li><a href="about.html">Proyectos</a>
+<ul>
+<li><a href="#">iniciados</a></li>
+<li><a href="#">en proceso</a></li>
+<li><a href="#">terminados</a></li>
+</ul>
+</li>
+<li class="current_page_item"></li>
+<li class="current_page_item"><a href="#">Nosotros</a>
+<ul>
+  <li><%=link_to "Nosotros", home_nosotros_path, id: "nosotros", class: "nosotros"%></li>
+<li><%=link_to "Contacto", home_contacto_path, id: "Contacto", class: "Contacto"%></li>
+<li><%=link_to "Estatutos", home_estatutos_path, id: "Estatutos", class: "Estatutos"%></li>
+
+
+</ul>
+</li>
+<li><%=link_to "Articulos", home_articulos_path, id: "articulos", class: "articulos"%></li>
+<li><%=link_to "Foro", home_foro_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Actas", home_actas_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Galeria", home_galeria_path, id: "foro", class: "foro"%></li>
+
+ </div>
+<!-- title -->
+			<div class="title">
+				<span class="big">Galeria</span> <span class="small">Aqui estan las fotos de LocXue</span>
+			</div>
+			<!-- ENDS title -->
+				<!-- filter -->
+			<ul id="portfolio-filter">
+	    		<li>FILTER </li>
+	    		<li><a href="#all">ALL</a></li>
+	    		<li><a href="#filter-autumn">AUTUMN</a></li>
+	    		<li><a href="#filter-winter">WINTER</a></li>
+	    		<li><a href="#filter-city">CITY</a></li>
+	    	</ul>
+			<!-- filter -->
+		
+				
+
+		<!-- Pagination -->
+		<ul class='gallery-pager'>
+			<li><a <%=link_to "galeria2", home_galeria2_path %>>anterior</a></li>
+			<li><a <%=link_to "galeria", home_galeria_path %>>1</a></li>
+			<li><a <%=link_to "galeria2", home_galeria2_path %>>2</a></li>
+			<li><a <%=link_to "galeria3", home_galeria3_path %>>3</a></li>
+			<li><a <%=link_to "galeria4", home_galeria4_path %>>4</a></li>
+			<li><a <%=link_to "galeria4", home_galeria4_path %>>siguiente</a></li>
+		</ul>
+		<!-- ENDS Pagination -->
+				
+		</div>
+		<!-- ENDS MAIN -->
+	

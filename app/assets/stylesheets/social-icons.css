@@ -1,0 +1,155 @@
+/* Social icons for the footer ------------------------------*/
+
+
+
+.aim{ background: url(komodo-icons/aim_16.png); }
+.apple{ background: url(komodo-icons/apple_16.png); }
+.bebo{ background: url(komodo-icons/bebo_16.png); }
+.blogger{ background: url(komodo-icons/blogger_16.png); }
+.brightkite{ background: url(komodo-icons/brightkite_16.png); }
+.cargo{ background: url(komodo-icons/cargo_16.png); }
+.delicious{ background: url(komodo-icons/delicious_16.png); }
+.designfloat{ background: url(komodo-icons/designfloat_16.png); }
+.designmoo{ background: url(komodo-icons/designmoo_16.png); }
+.deviantart{ background: url(komodo-icons/deviantart_16.png); }
+.digg{ background: url(komodo-icons/digg_16.png); }
+.dopplr{ background: url(komodo-icons/dopplr_16.png); }
+.dribbble{ background: url(komodo-icons/dribbble_16.png); }
+.email{ background: url(komodo-icons/email_16.png); }
+.ember{ background: url(komodo-icons/ember_16.png); }
+.evernote{ background: url(komodo-icons/evernote_16.png); }
+.facebook{ background: url(komodo-icons/facebook_16.png); }
+.flickr{ background: url(komodo-icons/flickr_16.png); }
+.forrst{ background: url(komodo-icons/forrst_16.png); }
+.friendfeed{ background: url(komodo-icons/friendfeed_16.png); }
+.gamespot{ background: url(komodo-icons/gamespot_16.png); }
+.google{ background: url(komodo-icons/google_16.png); }
+.google_voice{ background: url(komodo-icons/google_voice_16.png); }
+.google_wave{ background: url(komodo-icons/google_wave_16.png); }
+.googletalk{ background: url(komodo-icons/googletalk_16.png); }
+.gowalla{ background: url(komodo-icons/gowalla_16.png); }
+.grooveshark{ background: url(komodo-icons/grooveshark_16.png); }
+.ilike{ background: url(komodo-icons/ilike_16.png); }
+.komodomedia_azure{ background: url(komodo-icons/komodomedia_azure_16.png); }
+.komodomedia_wood{ background: url(komodo-icons/komodomedia_wood_16.png); }
+.lastfm{ background: url(komodo-icons/lastfm_16.png); }
+.linkedin{ background: url(komodo-icons/linkedin_16.png); }
+.mixx{ background: url(komodo-icons/mixx_16.png); }
+.mobileme{ background: url(komodo-icons/mobileme_16.png); }
+.mynameise{ background: url(komodo-icons/mynameise_16.png); }
+.myspace{ background: url(komodo-icons/myspace_16.png); }
+.netvibes{ background: url(komodo-icons/netvibes_16.png); }
+.newsvine{ background: url(komodo-icons/newsvine_16.png); }
+.openid{ background: url(komodo-icons/openid_16.png); }
+.orkut{ background: url(komodo-icons/orkut_16.png); }
+.pandora{ background: url(komodo-icons/pandora_16.png); }
+.paypal{ background: url(komodo-icons/paypal_16.png); }
+.picasa{ background: url(komodo-icons/picasa_16.png); }
+.playstation{ background: url(komodo-icons/playstation_16.png); }
+.plurk{ background: url(komodo-icons/plurk_16.png); }
+.posterous{ background: url(komodo-icons/posterous_16.png); }
+.qik{ background: url(komodo-icons/qik_16.png); }
+.readernaut{ background: url(komodo-icons/readernaut_16.png); }
+.reddit{ background: url(komodo-icons/reddit_16.png); }
+.roboto{ background: url(komodo-icons/roboto_16.png); }
+.rss{ background: url(komodo-icons/rss_16.png); }
+.sharethis{ background: url(komodo-icons/sharethis_16.png); }
+.skype{ background: url(komodo-icons/skype_16.png); }
+.stumbleupon{ background: url(komodo-icons/stumbleupon_16.png); }
+.technorati{ background: url(komodo-icons/technorati_16.png); }
+.tumblr{ background: url(komodo-icons/tumblr_16.png); }
+.twitter{ background: url(komodo-icons/twitter_16.png); }
+.viddler{ background: url(komodo-icons/viddler_16.png); }
+.vimeo{ background: url(komodo-icons/vimeo_16.png); }
+.virb{ background: url(komodo-icons/virb_16.png); }
+.windows{ background: url(komodo-icons/windows_16.png); }
+.wordpress{ background: url(komodo-icons/wordpress_16.png); }
+.xing{ background: url(komodo-icons/xing_16.png); }
+.yahoo{ background: url(komodo-icons/yahoo_16.png); }
+.yahoobuzz{ background: url(komodo-icons/yahoobuzz_16.png); }
+.yelp{ background: url(komodo-icons/yelp_16.png); }
+.youtube{ background: url(komodo-icons/youtube_16.png); }
+.zootool{ background: url(komodo-icons/zootool_16.png); }
+
+
+.icon{
+	display: block;
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-indent: 22px;
+}
+
+
+/*
+
+The list of icon files in 16px
+
+ aim_16.png
+ apple_16.png
+ bebo_16.png
+ blogger_16.png
+ brightkite_16.png
+ cargo_16.png
+ delicious_16.png
+ designfloat_16.png
+ designmoo_16.png
+ deviantart_16.png
+ digg_16.png
+ dopplr_16.png
+ dribbble_16.png
+ email_16.png
+ ember_16.png
+ evernote_16.png
+ facebook_16.png
+ flickr_16.png
+ forrst_16.png
+ friendfeed_16.png
+ gamespot_16.png
+ google_16.png
+ google_voice_16.png
+ google_wave_16.png
+ googletalk_16.png
+ gowalla_16.png
+ grooveshark_16.png
+ ilike_16.png
+ komodomedia_azure_16.png
+ komodomedia_wood_16.png
+ lastfm_16.png
+ linkedin_16.png
+ mixx_16.png
+ mobileme_16.png
+ mynameise_16.png
+ myspace_16.png
+ netvibes_16.png
+ newsvine_16.png
+ openid_16.png
+ orkut_16.png
+ pandora_16.png
+ paypal_16.png
+ picasa_16.png
+ playstation_16.png
+ plurk_16.png
+ posterous_16.png
+ qik_16.png
+ readernaut_16.png
+ reddit_16.png
+ roboto_16.png
+ rss_16.png
+ sharethis_16.png
+ skype_16.png
+ stumbleupon_16.png
+ technorati_16.png
+ tumblr_16.png
+ twitter_16.png
+ viddler_16.png
+ vimeo_16.png
+ virb_16.png
+ windows_16.png
+ wordpress_16.png
+ xing_16.png
+ yahoo_16.png
+ yahoobuzz_16.png
+ yelp_16.png
+ youtube_16.png
+ zootool_16.png
+*/

@@ -1,4 +1,91 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
+ <div class="row">
+<div class="large-3 columns">
+<h1><%=image_tag "imagen.png"%></h1>
+</div>
+<div class="large-9 columns">
+<ul class="right button-group">
+<li><a href="#" class="button">Link 1</a></li>
+<li><a href="#" class="button">Link 2</a></li>
+<li><a href="#" class="button">Link 3</a></li>
+<li><a href="#" class="button">Link 4</a></li>
+</ul>
+</div>
+</div>
+<!-- End Top Bar -->
+<div class="row">
+<div class="large-12 columns">
+<!-- Content Slider -->
+<div class="row">
+<div class="large-12 pull-20 columns">
+<div id="featured" data-orbit>
+<%=image_tag "01.jpg"%>
+<%=image_tag "02.jpg"%>
+<%=image_tag "03.jpg"%>
+<%=image_tag "04.jpg"%>
+</div>
+</div>
+</div>
+<!-- End Content Slider -->
+<!-- Mobile Header -->
+<div class="row">
+<div class="large-12 columns show-for-small">
+<img src="http://placehold.it/1200x700&text=Mobile Header">
+</div>
+</div><br>
+<!-- End Mobile Header -->
+<div class="row">
+<div class="large-12 columns">
+<div class="row">
+<!-- Shows -->
+<div class="large-4 small-6 columns">
+
+<h4>Publica tu experiencia</h4><hr>
+<a class="twitter-timeline"  href="https://twitter.	com/locxue"  data-widget-id="328961318688264192">Tweets por @locxue</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js =d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+<!-- End Shows -->
+<!-- Image -->
+<div class="large-4 small-6 columns">
+<h4>Eventos</h4><hr>
+<%=image_tag @eventolast.imagen%>
+</div>
+<!-- End Image -->
+<!-- Feed -->
+<div class="large-4 small-12 columns">
+<h4>Ultimos Articulos</h4><hr>
+<% @articuloindex.each do |articulo| %>
+<div class="panel">
+	<h5><%=link_to articulo.titulo, articulo%> </h5>
+</div>
 <% end %>
+
+</div>
+<!-- End Feed -->
+</div>
+</div>
+</div>
+<!-- End Content -->
+<!-- Footer -->
+<footer class="row">
+<div class="large-12 columns"><hr>
+<div class="row">
+<div class="large-6 columns">
+<p>&copy; Desarrollado por Camilo Velasquez & Guillermo Alvarado.</p>
+</div>
+
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+</div>
+</div>
+<script>
+document.write('<script src=js/vendor/' +
+('__proto__' in {} ? 'zepto' : 'jquery') +
+'.js><\/script>')
+</script>
+<script src="js/foundation.min.js"></script>
+<script>
+$(document).foundation();
+</script>
+<!-- End Footer -->

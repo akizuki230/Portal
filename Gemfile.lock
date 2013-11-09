@@ -1,3 +1,9 @@
+GIT
+  remote: http://github.com/rmagick/rmagick.git
+  revision: 79e1708c7f6792a3a90cb8cb3ffaeb74c58e092e
+  specs:
+    rmagick (2.13.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,9 +43,15 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    carrierwave (0.9.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
     celluloid (0.15.2)
       timers (~> 1.1.0)
     chunky_png (1.2.9)
+    ckeditor_rails (4.2.2)
+      railties (>= 3.0)
     coderay (1.0.9)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -206,6 +218,8 @@ PLATFORMS
 DEPENDENCIES
   cancan
   capybara
+  carrierwave
+  ckeditor_rails
   coffee-rails (~> 4.0.0)
   compass-rails (~> 2.0.alpha.0)
   database_cleaner (= 1.0.1)
@@ -222,6 +236,7 @@ DEPENDENCIES
   rb-fchange
   rb-fsevent
   rb-inotify
+  rmagick (= 2.13.2)!
   rolify
   rspec-rails
   sass-rails (~> 4.0.0)

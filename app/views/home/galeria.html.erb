@@ -1,0 +1,139 @@
+<div id="main">
+    <%= image_tag "imagen.png", :alt => "logo", :id => "logo"%>
+
+<!-- Nav and Banner -->
+
+<div id="centeredmenu">
+<ul class="sf-menu">
+<li><%=link_to "Inicio", root_path, id: "home", class: "home"%></li>
+
+<li><a href="about.html">Proyectos</a>
+<ul>
+<li><a href="#">iniciados</a></li>
+<li><a href="#">en proceso</a></li>
+<li><a href="#">terminados</a></li>
+</ul>
+</li>
+<li class="current_page_item"></li>
+<li class="current_page_item"><a href="#">Nosotros</a>
+<ul>
+  <li><%=link_to "Nosotros", home_nosotros_path, id: "nosotros", class: "nosotros"%></li>
+<li><%=link_to "Contacto", home_contacto_path, id: "Contacto", class: "Contacto"%></li>
+<li><%=link_to "Estatutos", home_estatutos_path, id: "Estatutos", class: "Estatutos"%></li>
+
+
+</ul>
+</li>
+<li><%=link_to "Articulos", home_articulos_path, id: "articulos", class: "articulos"%></li>
+<li><%=link_to "Foro", home_foro_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Actas", home_actas_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Galeria", home_galeria_path, id: "foro", class: "foro"%></li>
+
+ </div>
+<!-- title -->
+			<div class="title">
+				<span class="big">Galeria</span> <span class="small">Aqui estan las fotos de LocXue</span>
+			</div>
+			<!-- ENDS title -->
+				<!-- filter -->
+			<ul id="portfolio-filter">
+	    		<li>FILTER </li>
+	    		<li><a href="#all">ALL</a></li>
+	    		<li><a href="#filter-autumn">AUTUMN</a></li>
+	    		<li><a href="#filter-winter">WINTER</a></li>
+	    		<li><a href="#filter-city">CITY</a></li>
+	    	</ul>
+			<!-- filter -->
+		<!-- Thumbnails -->
+			<ul id="portfolio-list" class="gallery two-cols" >
+				<li class="filter-autumn">
+					<a href="http://sphotos-h.ak.fbcdn.net/hphotos-ak-ash4/1236816_520157028059069_1584932956_n.jpg" title="The road" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-h.ak.fbcdn.net/hphotos-ak-ash4/1236816_520157028059069_1584932956_n.jpg" alt="Abandoned Boat" title="Abandoned Boat"/></a>				</li>
+				
+				<li class="filter-autumn">
+					<a href="http://sphotos-b.ak.fbcdn.net/hphotos-ak-ash4/1001279_520157061392399_243002076_n.jpg" title="Yellow leaves" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-b.ak.fbcdn.net/hphotos-ak-ash4/1001279_520157061392399_243002076_n.jpg" alt="Yellow Leaves" title="Yellow Leaves"/></a>
+					<em>Yellow Leaves</em>
+				</li>
+				<li class="filter-autumn">
+					<a href="http://sphotos-f.ak.fbcdn.net/hphotos-ak-prn2/1175512_520155338059238_1693175204_n.jpg" title="The road" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-f.ak.fbcdn.net/hphotos-ak-prn2/1175512_520155338059238_1693175204_n.jpg" alt="Abandoned Boat" title="Abandoned Boat"/></a>
+					<em>Abandoned Boat</em>
+				</li>
+				<li class="filter-autumn">
+					<a href="http://sphotos-h.ak.fbcdn.net/hphotos-ak-frc1/995192_520155421392563_1915597163_n.jpg" title="The road" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-h.ak.fbcdn.net/hphotos-ak-frc1/995192_520155421392563_1915597163_n.jpg" alt="Big Tree" title="Big Tree"/></a>
+					<em>Big Tree</em>
+				</li>
+				
+				<li class="filter-winter">
+					<a href="http://sphotos-f.ak.fbcdn.net/hphotos-ak-prn1/798422_10200583732742609_2111217598_o.jpg" title="The road" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-f.ak.fbcdn.net/hphotos-ak-prn1/798422_10200583732742609_2111217598_o.jpg" alt="The Road" title="The Road"/></a>
+					<em>The Road</em>
+				</li>
+				<li class="filter-winter">
+					<a href="http://sphotos-e.ak.fbcdn.net/hphotos-ak-ash2/792261_10200583736942714_985068629_o.jpg" title="Plant" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-e.ak.fbcdn.net/hphotos-ak-ash2/792261_10200583736942714_985068629_o.jpg" alt="Plant" title="Plant"/></a>
+					<em>Plant</em>
+				</li>
+				<li class="filter-winter">
+					<a href="http://sphotos-a.ak.fbcdn.net/hphotos-ak-frc1/526890_395435580531215_419416723_n.jpg" title="River" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-a.ak.fbcdn.net/hphotos-ak-frc1/526890_395435580531215_419416723_n.jpg" alt="River" title="River"/></a>
+					<em>River</em>
+				</li>
+				<li class="filter-winter">
+					<a href="http://sphotos-a.ak.fbcdn.net/hphotos-ak-frc1/793911_10200583636180195_525478341_o.jpg" title="Roots" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-a.ak.fbcdn.net/hphotos-ak-frc1/793911_10200583636180195_525478341_o.jpg" alt="Roots" title="Roots"/></a>
+					<em>Roots</em>
+				</li>
+				
+				<li class="filter-city">
+					<a href="http://sphotos-a.ak.fbcdn.net/hphotos-ak-frc1/920892_447015932057691_740530681_o.jpg" title="The Boat" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-a.ak.fbcdn.net/hphotos-ak-frc1/920892_447015932057691_740530681_o.jpg" alt="The Boat" title="The Boat"/></a>
+					<em>The Boat</em>
+				</li>
+				<li class="filter-city">
+					<a href="http://sphotos-d.ak.fbcdn.net/hphotos-ak-frc3/550175_10151240519247436_282107600_n.jpg" title="city" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-d.ak.fbcdn.net/hphotos-ak-frc3/550175_10151240519247436_282107600_n.jpg" alt="city" title="city"/></a>
+					<em>city</em>
+				</li>
+				<li class="filter-city">
+					<a href="http://sphotos-h.ak.fbcdn.net/hphotos-ak-prn1/263411_10151240519782436_2014807722_n.jpg" title="Crosswalk" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-h.ak.fbcdn.net/hphotos-ak-prn1/263411_10151240519782436_2014807722_n.jpg" alt="Crosswalk" title="Crosswalk"/></a>
+					<em>Crosswalk</em>
+				</li>
+				<li class="filter-city">
+					<a href="http://sphotos-e.ak.fbcdn.net/hphotos-ak-prn1/59638_10151240519462436_795336518_n.jpg" title="Yellow" rel="prettyPhoto[gallery]">
+					<span></span>
+					<img src="http://sphotos-e.ak.fbcdn.net/hphotos-ak-prn1/59638_10151240519462436_795336518_n.jpg" alt="Yellow" title="Yellow"/></a>
+					<em>Yellow</em>
+				</li>
+		 	</ul>
+			<!-- ENDS Thumbnails -->
+				
+
+		<!-- Pagination -->
+		<ul class='gallery-pager'>
+			<li><a <%=link_to "galeria", home_galeria_path %>>anterior</a></li>
+			<li><a <%=link_to "galeria", home_galeria_path %>>1</a></li>
+			<li><a <%=link_to "galeria2", home_galeria2_path %>>2</a></li>
+			<li><a <%=link_to "galeria3", home_galeria3_path %>>3</a></li>
+			<li><a <%=link_to "galeria4", home_galeria4_path %>>4</a></li>
+			<li><a <%=link_to "galeria3", home_galeria2_path %>>siguiente</a></li>
+		</ul>
+		<!-- ENDS Pagination -->
+				
+		</div>
+		<!-- ENDS MAIN -->
+	

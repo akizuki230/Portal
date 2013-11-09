@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131108022242) do
+ActiveRecord::Schema.define(version: 20131109041633) do
 
   create_table "actas", force: true do |t|
     t.date     "fecha"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20131108022242) do
 
   create_table "articulos", force: true do |t|
     t.string   "titulo"
-    t.string   "contenido"
+    t.text     "contenido"
     t.string   "imagen"
     t.integer  "user_id"
     t.datetime "created_at"

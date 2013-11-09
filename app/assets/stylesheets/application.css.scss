@@ -11,10 +11,15 @@
  *= require_self
  *= require_tree .
  */
+
+ *{
+   padding: 0em;
+   margin: 0em;
+   }
 .content {
-  background-color: #eee;
-  padding: 20px;
-  margin: 0 -20px;
+ background-image:url('fondo.jpg');
+background-repeat:repeat;
+  
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;

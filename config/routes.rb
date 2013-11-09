@@ -15,6 +15,7 @@ scope "admin" do
 end
   
   root :to => "home#index"
+  get "home/blog"
   devise_for :users, :controllers => {:registrations => "registrations"}
   resources :users
 end
