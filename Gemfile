@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'cancan'
 gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'devise'
-gem 'pg'
+gem 'mysql2'
 gem 'rolify'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
